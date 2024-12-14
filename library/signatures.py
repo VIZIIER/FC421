@@ -1,7 +1,7 @@
 # signatures.py
-from Cryptodome.Signature import pkcs1_15
-from Cryptodome.Hash import SHA256
-from Cryptodome.PublicKey import RSA
+from Crypto.Signature import pkcs1_15
+from Crypto.Hash import SHA256
+from Crypto.PublicKey import RSA
 
 def sign_data(data: bytes, private_key: bytes) -> bytes:
     """

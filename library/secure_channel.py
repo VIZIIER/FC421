@@ -1,5 +1,5 @@
 # secure_channel.py
-from Cryptodome.Random import get_random_bytes
+from Crypto.Random import get_random_bytes
 from .symmetric import aes_encrypt, aes_decrypt
 from .asymmetric import rsa_encrypt, rsa_decrypt
 

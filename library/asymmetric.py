@@ -1,6 +1,6 @@
 # asymmetric.py
-from Cryptodome.PublicKey import RSA
-from Cryptodome.Cipher import PKCS1_OAEP
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
 
 def generate_rsa_keys(key_size=2048):
     """
