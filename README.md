@@ -22,29 +22,32 @@
    ```
 
 3. **Install the required dependencies**:
-```
-pip install -r requirements.txt
-```
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage 
 1. **Import the desired module**:
-```
-from library import asymmetric, secure_channel, signatures, symmetric
-```
+   ```
+   from library import asymmetric, secure_channel, signatures, symmetric
+   ```
 2. **Example**: Encrypting a message using asymmetric encryption:
-```
+   ```
    # Generate keys
-private_key, public_key = asymmetric.generate_keys()
+   private_key, public_key = asymmetric.generate_keys()
 
-# Encrypt a message
-encrypted_message = asymmetric.encrypt(public_key, b'Your message here')
+   # Encrypt a message
+   encrypted_message = asymmetric.encrypt(public_key, b'Your message here')
 
-# Decrypt the message
-decrypted_message = asymmetric.decrypt(private_key, encrypted_message)
-```
+   # Decrypt the message
+   decrypted_message = asymmetric.decrypt(private_key, encrypted_message)
+   ```
 
 ## Testing
 to run the test:
-```
-python -m unittest discover tests
-```
+   ```
+   python -m unittest discover tests
+   ```
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
